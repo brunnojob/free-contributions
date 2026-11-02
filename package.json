@@ -1,0 +1,26 @@
+{
+  "name": "sponsortest",
+  "version": "1.0.0",
+  "description": "nice dream",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunnojob/sponsortest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunnojob/sponsortest/issues"
+  },
+  "homepage": "https://github.com/brunnojob/sponsortest#readme",
+  "dependencies": {
+    "jsonfile": "^6.2.1",
+    "moment": "^2.31.0",
+    "simple-git": "^4.0.2"
+  }
+}
