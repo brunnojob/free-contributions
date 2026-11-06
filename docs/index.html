@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SponsorTest — Shape your contribution graph</title>
+  <meta name="description" content="Preview a green contribution heatmap, choose daily commit counts and explore date ranges across past years. Free browser demo and dependency-free Node.js CLI.">
+  <meta name="theme-color" content="#0b1010">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+<header><a class="brand" href="./"><span class="mark">S</span> SponsorTest<span class="version">/ 2.0</span></a><a href="https://github.com/brunnojob/sponsortest">View repository ↗</a></header>
+<main>
+  <section class="intro"><p class="eyebrow"><span class="dot"></span> CONTRIBUTION HISTORY PLAYGROUND</p><h1>Your graph.<br>Your <em>parameters.</em></h1><p class="lead">Explore an all-green calendar. Choose the dates, set commits per day and preview your contribution pattern before running anything.</p><div class="pills"><span>Past years supported</span><span>Zero dependencies</span><span>Local execution</span></div></section>
+  <section class="workspace" aria-label="Contribution planner">
+    <div class="panel-head"><div><p class="eyebrow">01 / CONFIGURE</p><h2>Build your timeline</h2></div><span class="local">Browser preview</span></div>
+    <form id="planner"><div class="fields"><label>Start date<input id="start" name="start" type="date" min="1970-01-01" required></label><label>End date<input id="end" name="end" type="date" min="1970-01-01" required></label><label>Commits per day<input id="per-day" name="per-day" type="number" min="1" max="1000" step="1" value="5" required></label></div><div class="actions"><button type="submit">Preview timeline <span>↗</span></button><button id="previous" type="button" class="secondary">Previous full year</button></div><p id="error" class="error" role="alert"></p></form>
+    <div class="stats" aria-live="polite"><div><strong id="days">—</strong><span>days covered</span></div><div><strong id="total">—</strong><span>generated commits</span></div><div><strong id="years">—</strong><span>calendar years</span></div></div>
+    <div class="chart-head"><h3 id="chart-title">Contribution preview</h3><div class="year-control"><label for="year">View year</label><select id="year"></select></div></div>
+    <div class="calendar-scroll"><div id="calendar" class="calendar" aria-label="Simulated contribution calendar"></div></div>
+    <div class="chart-foot"><span id="detail" role="status">Hover or focus a day to inspect it.</span><span class="legend">Less <i></i><i></i><i></i><i></i><i></i> More</span></div>
+    <p class="note">Simulated data. Colors use a fixed demo scale; GitHub calculates its own intensity levels.</p>
+  </section>
+  <section class="run"><div><p class="eyebrow">02 / TAKE IT LOCAL</p><h2>Preview first.<br>Run when ready.</h2><p>The command below only prints a plan. To create commits, add <code>--repo ../your-history --apply</code>. Add <code>--push</code> only when you want to publish them.</p><p>Use a separate repository you own. Every generated commit is labeled as generated history.</p></div><div class="terminal"><div class="terminal-top"><span>Node.js 22+ · Git</span><button id="copy" type="button" class="copy">Copy command</button></div><pre><code id="command"></code></pre><p id="copy-status" role="status"></p><a id="download" href="#">Download plan as JSON ↓</a></div></section>
+  <section class="explain"><article><span>01</span><h3>Any past period</h3><p>Choose an inclusive interval, from a few days to multiple past years. Dates use UTC, including leap days.</p></article><article><span>02</span><h3>Daily control</h3><p>Set 1–1,000 commits for each selected day. Larger ranges take longer to generate locally.</p></article><article><span>03</span><h3>Know what counts</h3><p>GitHub requires a linked author email and an eligible branch. Private contributions need profile visibility enabled. Updates may take time.</p><a href="https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference">Read GitHub's rules ↗</a></article></section>
+</main>
+<footer><span>Built by <a href="https://github.com/brunnojob">brunnojob</a></span><span>Generated history is synthetic activity.</span><a href="https://github.com/brunnojob/sponsortest/issues">Feedback ↗</a></footer>
+</body></html>

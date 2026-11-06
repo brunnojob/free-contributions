@@ -1,26 +1,14 @@
 {
   "name": "sponsortest",
-  "version": "1.0.0",
-  "description": "nice dream",
-  "main": "index.js",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A contribution history playground with configurable dates, daily commit counts and an interactive heatmap preview.",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brunnojob/sponsortest.git"
-  },
-  "keywords": [],
-  "author": "",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node index.js", "test": "node --test" },
+  "repository": { "type": "git", "url": "https://github.com/brunnojob/sponsortest.git" },
+  "keywords": ["github", "contribution-graph", "git", "heatmap", "developer-tools", "javascript", "cli"],
+  "author": "brunnojob",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brunnojob/sponsortest/issues"
-  },
-  "homepage": "https://github.com/brunnojob/sponsortest#readme",
-  "dependencies": {
-    "jsonfile": "^6.2.1",
-    "moment": "^2.31.0",
-    "simple-git": "^4.0.2"
-  }
+  "homepage": "https://brunnojob.github.io/sponsortest/"
 }
