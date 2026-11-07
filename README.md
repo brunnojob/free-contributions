@@ -1,10 +1,10 @@
-# SponsorTest
+# FREE CONTRIBUTIONS
 
 **Choose your dates. Set your daily commits. Preview an all-green contribution calendar.**
 
 A dependency-free Node.js tool for generating dated Git commits in a repository you own. Configure commits per day and any inclusive date range, including multiple past years. Generated history is clearly labeled as synthetic activity.
 
-[**Try the interactive demo →**](https://brunnojob.github.io/sponsortest/) · [Report an issue](https://github.com/brunnojob/sponsortest/issues)
+[**Try the interactive demo →**](https://brunnojob.github.io/free-contributions/) · [Report an issue](https://github.com/brunnojob/sponsortest/issues)
 
 [![Animated contribution preview — click to configure your timeline](docs/assets/demo.gif)](https://brunnojob.github.io/sponsortest/)
 
